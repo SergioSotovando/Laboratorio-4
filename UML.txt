@@ -1,0 +1,111 @@
++-------------------------------------+
+|              Usuario                |
++-------------------------------------+
+| - nombre: String                    |
+| - contraseña: String                |
+| - plan: String                      |
+| - seleccion: List<Producto>         |
++-------------------------------------+
+| + Usuario(nombre: String,           |
+|            contraseña: String,      |
+|            plan: String)            |
+| + getNombre(): String               |
+| + getContraseña(): String           |
+| + getPlan(): String                 |
+| + getSeleccion(): List<Producto>    |
+| + setPlan(plan: String): void       |
+| + setContraseña(contraseña: String):|
+|    void                             |
++-------------------------------------+
+
++-------------------------------------+
+|             Producto                |
++-------------------------------------+
+| - nombre: String                    |
+| - tipo: String                      |
+| - cantidad: int                     |
+| - precio: double                    |
++-------------------------------------+
+| + Producto(nombre: String,          |
+|             tipo: String,           |
+|             cantidad: int,          |
+|             precio: double)         |
+| + getNombre(): String               |
+| + getTipo(): String                 |
+| + getCantidad(): int                |
+| + getPrecio(): double               |
++-------------------------------------+
+
++-------------------------------------+
+|             Prestamo                |
++-------------------------------------+
+| - usuario: Usuario                  |
+| - productos: List<Producto>         |
+| - diasEntrega: int                  |
+| - horarioEntrega: String            |
+| - sucursal: String                  |
+| - direccionEnvio: String            |
++-------------------------------------+
+| + Prestamo(usuario: Usuario,        |
+|            productos: List<Producto>)|
+| + getUsuario(): Usuario             |
+| + getProductos(): List<Producto>    |
++-------------------------------------+
+
++-------------------------------------+
+|               Menu                  |
++-------------------------------------+
+| - (métodos estáticos)               |
++-------------------------------------+
+| + mostrarMenuRegistro(usuario:      |
+|   Usuario): void                    |
+| + mostrarMenuSeleccion(usuario:     |
+|   Usuario): void                    |
++-------------------------------------+
+
++-------------------------------------+
+|               Main                  |
++-------------------------------------+
+| - (métodos estáticos)               |
++-------------------------------------+
+| + main(args: String[]): void        |
++-------------------------------------+
+
++-------------------------------------+
+|           BibliotecaApp              |
++-------------------------------------+
+| - USUARIOS_CSV: String              |
+| - usuarios: List<Usuario>           |
+| - prestamos: List<Prestamo>         |
+| - usuarioActual: Usuario            |
++-------------------------------------+
+| + main(args: String[]): void        |
+| + modoRegistro(scanner: Scanner):   |
+|   void                              |
+| + ingresarSalir(scanner: Scanner):  |
+|   void                              |
+| + modoSeleccion(scanner: Scanner):  |
+|   void                              |
+| + agregarLibro(scanner: Scanner):   |
+|   void                              |
+| + agregarRevista(scanner: Scanner): |
+|   void                              |
+| + vaciarLista(): void               |
+| + modoPrestamo(scanner: Scanner):   |
+|   void                              |
+| + modoPerfil(scanner: Scanner):     |
+|   void                              |
+| + modificarTipoCliente(scanner:     |
+|   Scanner): void                    |
+| + aplicarCupon(): void              |
+| + cambiarContraseña(scanner:        |
+|   Scanner): void                    |
+| + cargarUsuariosDesdeCSV():         |
+|   List<Usuario>                     |
+| + guardarUsuariosEnCSV(usuarios:    |
+|   List<Usuario>): void              |
+| + cargarPrestamosDesdeCSV():        |
+|   List<Prestamo>                    |
+| + guardarPrestamosEnCSV(prestamos:  |
+|   List<Prestamo>): void             |
++-------------------------------------+
